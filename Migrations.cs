@@ -24,8 +24,26 @@ namespace Lombiq.Associativy.TagNodes
                         .Creatable()
                 );
 
+            ContentDefinitionManager.AlterPartDefinition("AssociativyTagNodesPart",
+                part => part
+                    .Attachable()
+                    .WithDescription("Displays the Tag Nodes connected to the item, just as tags.")
+                );
+
 
             return 1;
+        }
+
+        public int UpdateFrom1()
+        {
+            ContentDefinitionManager.AlterPartDefinition("AssociativyTagNodesPart",
+                part => part
+                    .Attachable()
+                    .WithDescription("Displays the Tag Nodes connected to the item, just as tags.")
+                );
+
+
+            return 2;
         }
     }
 }

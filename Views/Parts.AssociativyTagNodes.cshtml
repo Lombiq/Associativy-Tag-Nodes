@@ -1,0 +1,42 @@
+﻿@using Orchard.ContentManagement;
+
+@{
+    Style.Include("associativy-tag-nodes.css");
+    
+    var part = (Lombiq.Associativy.TagNodes.Models.AssociativyTagNodesPart)Model.ContentPart;
+
+    var contentManager = part.ContentItem.ContentManager;
+    var allTagNodes = part.ConnectedTagNodes.SelectMany(kvp => kvp.Value);
+    var projectionRoute = part.TagNodeListingProjection != null ? contentManager.GetItemMetadata(part.TagNodeListingProjection).DisplayRouteValues : null;
+
+    var nodeHtmls = new List<IHtmlString>();
+    foreach (var node in allTagNodes)
+    {
+        if (nodeHtmls.Any())
+        {
+            nodeHtmls.Add(new HtmlString(", "));
+        }
+
+        var nodeDisplayText = contentManager.GetItemMetadata(node).DisplayText;
+        if (projectionRoute != null)
+        {
+            projectionRoute["TagNode"] = node.As<Associativy.Models.IAssociativyNodeLabelAspect>().Label;
+            nodeHtmls.Add(Html.RouteLink(nodeDisplayText, projectionRoute));
+        }
+        else
+        {
+            nodeHtmls.Add(new HtmlString(nodeDisplayText));
+        }
+    }
+}
+
+
+@if (nodeHtmls.Any())
+{
+    <span class="associativy-tag-nodes-connected-nodes">
+        @foreach (var htmlString in nodeHtmls)
+        {
+            @htmlString
+        }
+    </span>
+}

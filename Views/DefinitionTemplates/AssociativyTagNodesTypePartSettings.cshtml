@@ -1,0 +1,38 @@
+﻿@model Lombiq.Associativy.TagNodes.Settings.AssociativyTagNodesTypePartSettings
+@{
+    Script.Require("ContentPicker").AtFoot();
+}
+
+<fieldset>
+    <ol>
+        <li>
+            @Html.HiddenFor(m => m.ProjectionId)
+            <span id="associativy-tag-nodes-selected-projection">
+                @if (Model.ProjectionId != 0)
+                {
+                    @Html.ItemEditLink(WorkContext.Resolve<Orchard.ContentManagement.IContentManager>().Get(Model.ProjectionId));
+                }
+            </span>
+            <span id="associativy-tag-nodes-select-projection" class="button">@T("Select Projection")</span>
+            <span class="hint">@T("The Projection selected here will be used to list items connected with a Tag Node when a Tag Node is clicked from the list under an item wiht Tag Nodes Part attached. The Projection should preferably employ the Associativy Search Filter from <a href='https://associativyexts.codeplex.com/'>Associativy.Extensions</a> to run an Associativy search with the Tag Node's label received from the query string's \"TagNode\" parameter.")</span>
+        </li>
+    </ol>
+</fieldset>
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        (function ($) {
+            var selectButton = $("#associativy-tag-nodes-select-projection");
+            selectButton.click(function () {
+                selectButton.trigger("orchard-admin-contentpicker-open", {
+                    callback: function (data) {
+                        $("#associativy-tag-nodes-selected-projection").html(data.editLink);
+                        $("#@Html.FieldIdFor(m => m.ProjectionId)").val(data.id);
+                    },
+                    baseUrl: "@Href("~/")"
+                });
+            });
+        })(jQuery);
+    </script>
+}

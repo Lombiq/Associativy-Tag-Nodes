@@ -10,4 +10,4 @@ Features:
 		Name: Associativy TagNodes
         Description: Lightweight Associativy nodes that behave somewhat like tags.
 		Category: Associativy
-		Dependencies: Associativy.Administration
+		Dependencies: Orchard.ContentPicker, Associativy.Administration
