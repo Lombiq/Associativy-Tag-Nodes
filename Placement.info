@@ -1,3 +1,8 @@
 ﻿<Placement>
-  <Place Parts_AssociativyTagNodes="Header:after.7"/>
+  <Match DisplayType="Detail">
+    <Place Parts_AssociativyTagNodes="Header:after.7"/>
+  </Match>
+  <Match DisplayType="Summary">
+    <Place Parts_AssociativyTagNodes="Header:after.7"/>
+  </Match>
 </Placement>
