@@ -3,7 +3,7 @@ AntiForgery: enabled
 Author: Lombiq
 Website: http://associativytagnodes.codeplex.com
 Version: 1.0
-OrchardVersion: 1.7
+OrchardVersion: 1.8
 Description: Lightweight Associativy nodes that behave somewhat like tags.
 Features:
     Lombiq.Associativy.TagNodes:
