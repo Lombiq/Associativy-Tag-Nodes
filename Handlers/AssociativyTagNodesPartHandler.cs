@@ -34,8 +34,6 @@ namespace Lombiq.Associativy.TagNodes.Handlers
                             kvps.Add(new KeyValuePair<IGraph, IEnumerable<IContent>>(graph, items));
                         }
 
-                        var z = part.Settings.GetModel<AssociativyTagNodesTypePartSettings>().ProjectionId;
-                        var y = context.ContentItem.ContentManager.Get(z);
                         return kvps;
                     });
 
