@@ -102,9 +102,6 @@
     <Content Include="Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Parts.AssociativyTagNodes.cshtml" />
   </ItemGroup>
   <ItemGroup>
