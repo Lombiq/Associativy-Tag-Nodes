@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Lombiq.Associativy.TagNodes.Models;
+using Associativy.TagNodes.Models;
 using Orchard.ContentManagement.Drivers;
 
-namespace Lombiq.Associativy.TagNodes.Drivers
+namespace Associativy.TagNodes.Drivers
 {
     public class AssociativyTagNodesPartDriver : ContentPartDriver<AssociativyTagNodesPart>
     {

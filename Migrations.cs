@@ -7,7 +7,7 @@ using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
 using Orchard.Environment.Extensions;
 
-namespace Lombiq.Associativy.TagNodes
+namespace Associativy.TagNodes
 {
     public class Migrations : DataMigrationImpl
     {

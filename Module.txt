@@ -6,7 +6,7 @@ Version: 1.0
 OrchardVersion: 1.8
 Description: Lightweight Associativy nodes that behave somewhat like tags.
 Features:
-    Lombiq.Associativy.TagNodes:
+    Associativy.TagNodes:
 		Name: Associativy TagNodes
         Description: Lightweight Associativy nodes that behave somewhat like tags.
 		Category: Associativy

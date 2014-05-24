@@ -8,7 +8,7 @@ using Orchard.ContentManagement.MetaData.Builders;
 using Orchard.ContentManagement.MetaData.Models;
 using Orchard.ContentManagement.ViewModels;
 
-namespace Lombiq.Associativy.TagNodes.Settings
+namespace Associativy.TagNodes.Settings
 {
     public class AssociativyTagNodesTypePartSettings
     {

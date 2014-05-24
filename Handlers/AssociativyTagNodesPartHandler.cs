@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Orchard.ContentManagement.Handlers;
-using Lombiq.Associativy.TagNodes.Models;
+using Associativy.TagNodes.Models;
 using Associativy.GraphDiscovery;
 using Orchard.ContentManagement;
 using Associativy.Services;
 using Associativy.Models;
-using Lombiq.Associativy.TagNodes.Settings;
+using Associativy.TagNodes.Settings;
 
-namespace Lombiq.Associativy.TagNodes.Handlers
+namespace Associativy.TagNodes.Handlers
 {
     public class AssociativyTagNodesPartHandler : ContentHandler
     {

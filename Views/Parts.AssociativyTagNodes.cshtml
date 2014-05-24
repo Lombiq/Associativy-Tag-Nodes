@@ -3,7 +3,7 @@
 @{
     Style.Include("associativy-tag-nodes.css");
     
-    var part = (Lombiq.Associativy.TagNodes.Models.AssociativyTagNodesPart)Model.ContentPart;
+    var part = (Associativy.TagNodes.Models.AssociativyTagNodesPart)Model.ContentPart;
 
     var contentManager = part.ContentItem.ContentManager;
     var allTagNodes = part.ConnectedTagNodes.SelectMany(kvp => kvp.Value);

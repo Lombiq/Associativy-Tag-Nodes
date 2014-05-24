@@ -6,7 +6,7 @@ using Associativy.GraphDiscovery;
 using Orchard.ContentManagement;
 using Orchard.Core.Common.Utilities;
 
-namespace Lombiq.Associativy.TagNodes.Models
+namespace Associativy.TagNodes.Models
 {
     public class AssociativyTagNodesPart : ContentPart
     {
