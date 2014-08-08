@@ -1,4 +1,4 @@
-﻿Name: Associativy TagNodes
+﻿Name: Associativy Tag Nodes
 AntiForgery: enabled
 Author: Lombiq
 Website: http://associativytagnodes.codeplex.com
@@ -7,7 +7,7 @@ OrchardVersion: 1.8
 Description: Lightweight Associativy nodes that behave somewhat like tags.
 Features:
     Associativy.TagNodes:
-		Name: Associativy TagNodes
+		Name: Associativy Tag Nodes
         Description: Lightweight Associativy nodes that behave somewhat like tags.
 		Category: Associativy
 		Dependencies: Orchard.ContentPicker, Associativy.Administration
