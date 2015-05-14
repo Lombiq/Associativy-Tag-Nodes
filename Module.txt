@@ -1,9 +1,9 @@
-﻿Name: Associativy Tag Nodes
+Name: Associativy Tag Nodes
 AntiForgery: enabled
 Author: Lombiq
 Website: http://associativytagnodes.codeplex.com
 Version: 1.0
-OrchardVersion: 1.8
+OrchardVersion: 1.8.2
 Description: Lightweight Associativy nodes that behave somewhat like tags.
 Features:
     Associativy.TagNodes:
