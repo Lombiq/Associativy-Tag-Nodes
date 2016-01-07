@@ -1,4 +1,4 @@
-﻿@model Associativy.TagNodes.Settings.AssociativyTagNodesTypePartSettings
+@model Associativy.TagNodes.Settings.AssociativyTagNodesTypePartSettings
 @{
     Script.Require("ContentPicker").AtFoot();
 }
@@ -14,7 +14,7 @@
                 }
             </span>
             <span id="associativy-tag-nodes-select-projection" class="button">@T("Select Projection")</span>
-            <span class="hint">@T("The Projection selected here will be used to list items connected with a Tag Node when a Tag Node is clicked from the list under an item with Tag Nodes Part attached. The Projection should preferably employ the Associativy Search Filter from <a href='https://associativyexts.codeplex.com/'>Associativy.Extensions</a> to run an Associativy search with the Tag Node's label received from the query string's \"TagNode\" parameter.")</span>
+            @Html.Hint(T("The Projection selected here will be used to list items connected with a Tag Node when a Tag Node is clicked from the list under an item with Tag Nodes Part attached. The Projection should preferably employ the Associativy Search Filter from <a href='https://associativyexts.codeplex.com/'>Associativy.Extensions</a> to run an Associativy search with the Tag Node's label received from the query string's \"TagNode\" parameter."))
         </li>
     </ol>
 </fieldset>
