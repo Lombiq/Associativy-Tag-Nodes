@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Associativy.GraphDiscovery;
 using Orchard.ContentManagement;
-using Orchard.Core.Common.Utilities;
+using Orchard.ContentManagement.Utilities;
 
 namespace Associativy.TagNodes.Models
 {
